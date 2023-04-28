@@ -1,3 +1,153 @@
+body {
+  margin: 0;
+  padding: 12px;
+}
+
+#main_title {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 114%;
+  letter-spacing: 0.37px;
+  margin: 0 0 12px 0;
+}
+
 .top_Section {
-  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1c1a19;
+  background-image: url("icons/Illustration.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  min-height: 90vh;
+  margin: 5vh auto 5vh auto;
+  flex-direction: column;
+  min-width: 375px;
+  max-width: 450px;
+  align-content: center;
+}
+
+.top_Section > * {
+  flex: 1 1 auto;
+}
+
+.subtitle {
+  font-family: Roboto, sans-serif;
+  color: #fff5e1;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  margin: 0 0 12px 0;
+}
+
+.desc {
+  color: #fff;
+  line-height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0 0 24px 0;
+}
+
+.intro ul {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.intro li {
+  margin-right: 8px;
+}
+
+.contacts {
+  background-color: #dbd8d7;
+  overflow: hidden;
+}
+
+.header {
+  background-color: #3c3a39;
+  width: 100%;
+  margin: 0;
+}
+
+.menu_icon {
+  margin: 0 35px 0 24px;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu_icon li {
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  padding: 16px 0 12px 0;
+}
+
+.menu_icon ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_icon a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.headline {
+  padding: 120px 24px 120px 24px;
+}
+
+.icon {
+  display: inline-block;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.git {
+  background-image: url("icons/github.svg");
+}
+
+.git:hover {
+  background-image: url("icons/github_change.svg");
+}
+
+.linked {
+  background-image: url("icons/Linkedin.svg");
+}
+
+.linked:hover {
+  background-image: url("icons/Linkedin_change.svg");
+}
+
+.angel {
+  background-image: url("icons/Angel.svg");
+}
+
+.angel:hover {
+  background-image: url("icons/Angel_change.svg");
+}
+
+.twitter {
+  background-image: url("icons/Twitter.svg");
+}
+
+.twitter:hover {
+  background-image: url("icons/Twitter_change.svg");
+}
+
+.medium {
+  background-image: url("icons/Medium.svg");
+}
+
+.medium:hover {
+  background-image: url("icons/Medium_change.svg");
 }
