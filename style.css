@@ -59,7 +59,7 @@ body {
 }
 
 .intro li {
-  margin-right: 21px;
+  margin-right: 8px;
 }
 
 .contacts {
@@ -96,32 +96,58 @@ body {
   justify-content: space-between;
 }
 
-.app_bar {
-  display: flex;
-  margin-left: 21px;
-  margin-right: 14.67px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.icons_phone {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-}
-
-.icons_phone li {
-  margin-right: 5.03px;
-}
-
-.app_bar p {
-  font-family: Roboto, sans-serif;
-  font-weight: 500px;
-  font-size: 14px;
-  line-height: 16.41px;
+.menu_icon a{
+  text-decoration: none;
   color: #fff;
 }
 
 .headline {
   padding: 120px 24px 120px 24px;
+}
+
+.icon {
+  display: inline-block;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.git {
+  background-image: url("icons/github.svg");
+}
+
+.git:hover {
+  background-image: url("icons/github_change.svg");
+}
+
+.linked {
+  background-image: url("icons/Linkedin.svg");
+}
+
+.linked:hover {
+  background-image: url("icons/Linkedin_change.svg");
+}
+
+.angel {
+  background-image: url("icons/Angel.svg");
+}
+
+.angel:hover {
+  background-image: url("icons/Angel_change.svg");
+}
+
+.twitter {
+  background-image: url("icons/Twitter.svg");
+}
+
+.twitter:hover {
+  background-image: url("icons/Twitter_change.svg");
+}
+
+.medium {
+  background-image: url("icons/Medium.svg");
+}
+
+.medium:hover {
+  background-image: url("icons/Medium_change.svg");
 }
