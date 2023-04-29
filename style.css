@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  padding: 12px;
 }
 
 #main_title {
@@ -18,10 +17,9 @@ body {
   flex-wrap: wrap;
   background-color: #1c1a19;
   min-height: 90vh;
-  margin: 5vh auto 5vh auto;
+  margin: 0;
   flex-direction: column;
   min-width: 375px;
-  max-width: 450px;
   align-content: center;
 }
 
@@ -425,6 +423,11 @@ button:hover {
   background-color: #fff;
   color: #ff6b00;
   border: 2px solid #ff6b00;
+}
+
+button:active {
+  background-color:#e05304;
+  color: #f4f1f0;
 }
 
 .icon {
