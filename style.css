@@ -1,7 +1,5 @@
-* {
-  box-sizing: border-box;
+body {
   margin: 0;
-  padding: 0;
 }
 
 #main_title {
@@ -16,7 +14,6 @@
 
 .top_Section {
   display: flex;
-  flex-wrap: wrap;
   background-color: #1c1a19;
   min-height: 90vh;
   margin: 0;
@@ -427,7 +424,7 @@ button:hover {
 }
 
 button:active {
-  background-color:#e05304;
+  background-color: #e05304;
   color: #f4f1f0;
 }
 
