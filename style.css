@@ -1,5 +1,7 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 #main_title {
@@ -63,7 +65,6 @@ body {
 
 .header {
   background-color: #3c3a39;
-  width: 100%;
   margin: 0;
 }
 
