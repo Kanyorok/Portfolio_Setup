@@ -166,8 +166,7 @@ body {
 }
 
 .works_content ul {
-  display: flex;
-  list-style-type: none;
+  float: left;
   justify-content: space-between;
   margin-top: 0;
   margin-bottom: 12px;
