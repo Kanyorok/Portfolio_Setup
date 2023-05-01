@@ -167,7 +167,7 @@ body {
 
 .works_content ul {
   list-style-type: none;
-  float: left;
+  
   margin-top: 0;
   margin-bottom: 12px;
   padding: 0;
@@ -175,7 +175,8 @@ body {
 }
 
 .works_content li {
-  margin: 0;
+  float: left;
+  margin: 8px;
   border: 2px solid #8993a4;
   padding: 10px;
   color: #091e42;
