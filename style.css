@@ -166,6 +166,7 @@ body {
 }
 
 .works_content ul {
+  /*changes appear here */
   float: left;
   justify-content: space-between;
   margin-top: 0;
