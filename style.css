@@ -166,9 +166,8 @@ body {
 }
 
 .works_content ul {
-  /*changes appear here */
+  list-style-type: none;
   float: left;
-  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 12px;
   padding: 0;
