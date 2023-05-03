@@ -552,30 +552,62 @@ button:active {
   background-image: url("icons/Linkedin.svg");
 }
 
+.linked_footer {
+  background-image: url("icons/Linkedin_footer_change.svg");
+}
+
 .linked:hover {
   background-image: url("icons/Linkedin_change.svg");
+}
+
+.linked_footer:hover {
+  background-image: url("icons/Linkedin.svg");
 }
 
 .angel {
   background-image: url("icons/Angel.svg");
 }
 
+.angel_footer {
+  background-image: url("icons/Angel_footer_change.svg");
+}
+
 .angel:hover {
   background-image: url("icons/Angel_change.svg");
+}
+
+.angel_footer:hover {
+  background-image: url("icons/Angel.svg");
 }
 
 .twitter {
   background-image: url("icons/Twitter.svg");
 }
 
+.twitter_footer {
+  background-image: url("icons/Twitter_footer_change.svg");
+}
+
 .twitter:hover {
   background-image: url("icons/Twitter_change.svg");
+}
+
+.twitter_footer:hover {
+  background-image: url("icons/Twitter.svg");
 }
 
 .medium {
   background-image: url("icons/Medium.svg");
 }
 
+.medium_footer {
+  background-image: url("icons/Medium_footer_change.svg");
+}
+
 .medium:hover {
   background-image: url("icons/Medium_change.svg");
+}
+
+.medium_footer:hover {
+  background-image: url("icons/Medium.svg");
 }
