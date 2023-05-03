@@ -337,14 +337,12 @@
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </p>
         <form action="https://formspree.io/f/xgebdydo" method="post" class="contact_form">
-          <input name="FullName" type="text" placeholder="Full name" required
-            oninvalid="setCustomValidity('Please Enter Your Name to send message')" maxlength="30" />
-          <input name="Email" type="email" placeholder="Email address" required
-            oninvalid="setCustomValidity('Please Enter a Valid Email Address')" />
-          <textarea name="Message" rows="4" cols="50" placeholder="Write me something..." maxlength="500" required
-          oninvalid="setCustomValidity('Please leave a message')"
-          ></textarea>
-          <button type="submit">Get in touch</button>
+          <input name="FullName" type="text" placeholder="Full name" required maxlength="30" />
+          <input name="Email" type="email" placeholder="Email address" required />
+          <textarea name="Message" rows="4" cols="50" placeholder="Write me something..." maxlength="500" required></textarea>
+          <div class="centered_button">
+            <button type="submit">Get in touch</button>
+          </div>
         </form>
       </article>
       <hr />

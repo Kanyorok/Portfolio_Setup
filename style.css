@@ -60,6 +60,12 @@ body {
   overflow: hidden;
 }
 
+.centered_button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   background-color: #3c3a39;
   margin: 0;
