@@ -266,6 +266,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 386px;
   height: 386px;
+  padding-bottom: 24px;
 }
 
 .about {
@@ -392,6 +393,102 @@ body {
   gap: 12px;
 }
 
+.contact {
+  background-color: #fff;
+  margin: 0;
+}
+
+.contact_content {
+  padding-top: 69px;
+  padding-left: 23px;
+  padding-right: 25px;
+  margin-bottom: 78px;
+}
+
+.contact_content p {
+  margin-top: 0;
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 138%;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 119px;
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form input {
+  border: 0;
+  border-bottom: 1px solid #dbc8d7;
+  height: 48px;
+  padding-left: 16px;
+  margin-top: 0;
+  margin-bottom: 23px;
+  color: black;
+}
+
+input::placeholder {
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #979493;
+}
+
+.contact_form textarea {
+  border: 0;
+  background-color: #fbf8f7;
+  padding: 12px;
+  margin-bottom: 23px;
+}
+
+textarea::placeholder {
+  font-family: 'inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #3c3a39;
+}
+
+.contact_form button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background: #ff6b00;
+  color: #fff;
+  border: 1px #ff6b00;
+  padding: 12px;
+  width: 131px;
+  height: 48px;
+}
+
+.contact hr {
+  margin: 0;
+  border: 1px solid #dfe1e6;
+}
+
+.footer_icons {
+  margin-bottom: 53px;
+}
+
+.footer_icons ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.footer_icons path {
+  fill: currentColor;
+}
+
 .works_content a {
   text-decoration: none;
   color: #091e42;
@@ -439,8 +536,16 @@ button:active {
   background-image: url("icons/github.svg");
 }
 
+.git_footer{
+  background-image: url("icons/github_footer_change.svg");
+}
+
 .git:hover {
   background-image: url("icons/github_change.svg");
+}
+
+.git_footer:hover {
+  background-image: url("icons/github.svg");
 }
 
 .linked {
