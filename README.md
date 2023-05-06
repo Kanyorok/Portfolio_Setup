@@ -159,4 +159,14 @@ If you like this project, please leave a comment at the reply section about ways
 
 I would like to thank Microverse Team for support me with templates to complete the job. I take the chance to also thank the code reviewers for being helping complete the project.
 
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
