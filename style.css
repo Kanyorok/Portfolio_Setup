@@ -105,7 +105,8 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 130%;
-    margin: 0;
+    padding-right: 1.5vw;
+    margin-bottom: 0;
     height: 83px;
   }
 
@@ -229,11 +230,11 @@ body {
   }
 
   .contact_content p {
-    margin-top: 0;
+    margin-top: 13px;
     font-family: "inter", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 138%;
     text-align: center;
     color: #172b4d;
@@ -466,46 +467,45 @@ body {
 
   .works_content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 42.75vmax 29.5vmax;
     margin: 0;
-    padding: 0 141px 0 142px;
+    padding: 0 8.8125vw 0 8.875vw;
   }
 
   .works_content ul {
     display: flex;
     list-style-type: none;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5vw;
     padding: 0;
-    gap: 12px;
+    gap: 0.75vw;
   }
 
   .text_placement {
-    padding-left: 24px;
+    padding-left: 1.5vw;
   }
 
   .works_content h2 {
     font-family: "Crete Round", serif;
     font-style: normal;
-    font-size: 40px;
+    font-size: 2.5vw;
     font-weight: 400;
     line-height: 130%;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5vw;
   }
 
   .works_content p {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5vw;
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25vw;
     text-align: left;
     line-height: 140%;
     color: #091e42;
     display: grid;
-    order: 1;
   }
 
   .content_desc button {
@@ -549,17 +549,17 @@ body {
 
   .contact_content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-top: 130px;
-    padding-left: 8.3vw;
+    grid-template-columns: 29.9375vw 42.75vw;
+    padding-top: 8.125vw;
+    padding-left: 10.3vw;
     margin-bottom: 78px;
+    gap: 1.5vw;
+    width: 72.6875vw;
   }
 
   .contact_form {
     display: flex;
     flex-direction: column;
-    padding-left: 1.5vw;
-    padding-right: 8.875vw;
   }
 
   .contact_content p {
@@ -567,10 +567,9 @@ body {
     font-family: "inter", sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 40px;
+    font-size: 2.5vmax;
     line-height: 130%;
-    color: #172b4d;
-    margin-bottom: 119px;
+    color: #262626;
   }
 
   .major_menu {
@@ -767,7 +766,7 @@ body {
 }
 
 .works_content img {
-  margin-bottom: 24px;
+  margin-bottom: 1.5vw;
   width: 100%;
 }
 
@@ -786,13 +785,13 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.0625vmax;
+  line-height: 141%;
   background: #ff6b00;
   color: #fff;
   border: 1px #ff6b00;
-  padding: 12px;
-  width: 124px;
+  padding: 0.75vw;
+  width: 7.75vw;
   height: 48px;
   transition: height 2s, background-color 2s, rotate 2s;
 }
