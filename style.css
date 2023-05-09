@@ -97,6 +97,7 @@ body {
   .works_title {
     text-align: center;
     margin-bottom: 80px;
+    width: auto;
   }
 
   .works_title span {
@@ -105,7 +106,6 @@ body {
     font-weight: 400;
     font-size: 40px;
     line-height: 130%;
-    padding-right: 1.5vw;
     margin-bottom: 0;
     height: 83px;
   }
@@ -148,11 +148,12 @@ body {
     font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1vmax;
     text-align: justify;
     line-height: 150%;
     color: #091e42;
     display: grid;
+    word-wrap: break-word;
     order: 1;
   }
 
@@ -329,6 +330,21 @@ body {
     align-items: center;
     gap: 0.75em;
   }
+
+  .works_content button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 141%;
+    background: #ff6b00;
+    color: #fff;
+    border: 1px #ff6b00;
+    padding: 12px;
+    width: 124px;
+    height: 48px;
+    transition: height 2s, background-color 2s, rotate 2s;
+  }
 }
 
 @media (min-width: 768px) {
@@ -446,7 +462,7 @@ body {
     height: 30px;
     margin-bottom: 140px;
     margin-left: 154px;
-    margin-right: 154px;
+    margin-right: 217px;
   }
 
   .works_title span {
@@ -717,6 +733,26 @@ body {
     left: 0;
     width: 100%;
   }
+
+  .image_placement {
+    width: 100%;
+    height: auto;
+  }
+
+  .works_content button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.0625vmax;
+    line-height: 141%;
+    background: #ff6b00;
+    color: #fff;
+    border: 1px #ff6b00;
+    padding: 0.75vw;
+    width: 7.75vw;
+    height: 48px;
+    transition: height 2s, background-color 2s, rotate 2s;
+  }
 }
 
 .top_Section > * {
@@ -773,27 +809,14 @@ body {
 .works_content li {
   margin: 0;
   border: 2px solid #8993a4;
-  padding: 10px;
+  padding: 0.625vw;
   color: #091e42;
-  font-size: 15px;
+  font-size: 0.9375vw;
   font-weight: 500;
   font-family: "Inter", sans-serif;
   font-style: normal;
-}
-
-.works_content button {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.0625vmax;
-  line-height: 141%;
-  background: #ff6b00;
-  color: #fff;
-  border: 1px #ff6b00;
-  padding: 0.75vw;
-  width: 7.75vw;
-  height: 48px;
-  transition: height 2s, background-color 2s, rotate 2s;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 .about {
