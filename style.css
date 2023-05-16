@@ -14,10 +14,6 @@ body {
     align-content: center;
   }
 
-  .top_navigation {
-    background-color: #1c1a19;
-  }
-
   .content_desc img {
     display: none;
   }
@@ -85,10 +81,22 @@ body {
   }
 
   #top_navigation {
-    margin: 0 35px 0 24px;
+    margin: 34px 35px 0 24px;
     height: 100vh;
     transition: height .5s ease-out;
     display: none;
+  }
+
+  #top_navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+    margin: 0;
+    padding: 0 16px;
+
   }
 
   .menu_icon {
