@@ -83,7 +83,7 @@ body {
   #top_navigation {
     margin: 34px 35px 0 24px;
     height: 100vh;
-    transition: height .5s ease-out;
+    transition: height 0.5s ease-out;
     display: none;
   }
 
@@ -96,7 +96,18 @@ body {
     line-height: 133%;
     margin: 0;
     padding: 0 16px;
+  }
 
+  .works_title hr {
+    margin-top: 24px;
+    margin-bottom: 0;
+    border: 1px solid #212121;
+  }
+
+  #top_navigation hr {
+    margin-top: 15px;
+    margin-bottom: 24px;
+    border: 1px solid #6f6c6b;
   }
 
   .menu_icon {
@@ -107,12 +118,6 @@ body {
     padding: 16px 0 12px 0;
     overflow: hidden;
     position: relative;
-  }
-
-  .works_title hr {
-    margin-top: 24px;
-    margin-bottom: 0;
-    border: 1px solid #212121;
   }
 
   .works_title {
@@ -372,6 +377,7 @@ body {
   #top_navigation {
     display: none;
   }
+
   .top_Section {
     display: flex;
     background-color: #1c1a19;
@@ -946,7 +952,7 @@ textarea::placeholder {
 }
 
 .footer_icons {
-  margin-bottom: 53px;
+  margin-bottom: -24px;
 }
 
 .footer_icons ul {
