@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@300&family=Poppins:wght@300&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="js/menu.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Robert Kanyoro</title>
   </head>
@@ -19,17 +20,22 @@
         <nav class="menu_icon">
           <h2><a href="index.html">My Logo</a></h2>
           <nav class="dropdown_menu">
-            <img src="icons/Union.png" height="12px" width="18px" alt="Menu" />
+            <a href="javascript:void(0);" onclick="mobile_menu()"><img src="icons/Union.png" id="ham_button" height="12px" width="18px" alt="Menu" /></a>
           </nav>
           <div class="main_menu">
             <ul>
               <li>Portfolio</li>
-              <li>About</li>
-              <li>Contact</li>
+                <li>About</li>
+                <li>Contact</li>
               <li><img src="icons/Icon-mail.svg" alt="Menu" /></li>
             </ul>
           </div>
         </nav>
+        <div id="top_navigation">
+          <a href="">Portfolio</a><br>
+          <a href="">About</a><br>
+          <a href="">Contact</a><br>
+        </div>
       </section>
 
       <section class="headline">
