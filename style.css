@@ -789,7 +789,11 @@ body {
 }
 
 .popup {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
   background: rgba(0, 0, 0, 0.7);
   padding-left: 16px;
   padding-right: 16px;
@@ -804,7 +808,6 @@ body {
   flex-direction: column;
   background: #fff;
   border-radius: 2px;
-  position: relative;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 20px;
