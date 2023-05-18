@@ -44,6 +44,8 @@ const projects = {
   },
 }
 
+
+
 function clickedButton(the_id) {
   let savedInfo = the_id;
   let titleSelect = document.getElementById('headingSection');
@@ -58,3 +60,33 @@ function clickedButton(the_id) {
   }
 }
 
+const showSections = () => {
+  const divCard = `<section class="center_content">
+  <section class="content_desc">
+    <img src="icons/pro_sec.svg" alt="" />
+    <div class="top_left1">
+      <h2>Data Dashboard<br />Healthcare</h2>
+      <p>
+        A daily selection of privately personalized reads; no accounts
+        or sign-ups required. Has been the industry's standard.
+      </p>
+      <ul>
+        <li>
+          <a href="#">HTML</a>
+        </li>
+        <li>
+          <a href="#">BOOTSTRAP</a>
+        </li>
+        <li>
+          <a href="#">RUBY</a>
+        </li>
+      </ul>
+      <button id="projectTwo" onclick="clickedButton(this.id)" type="button">See project</button>
+    </div>
+  </section>
+</section>`;
+  return divCard;
+};
+window.addEventListener('load', () => {
+  document.getElementById('card_container').innerHTML = showSections();
+});
