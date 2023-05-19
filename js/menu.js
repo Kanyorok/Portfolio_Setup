@@ -236,6 +236,28 @@ function closed() {
   popWin.style.visibility = "hidden";
 }
 
+function validateEmail(email) {
+  const res = email.match(/[A-Z]/g);
+  const input = document.querySelector('form #li-btn input')
+  const li = document.querySelector("form #li-btn");
+  const child = document.createElement('small')
+  let msg = '';
+
+  if (res) msg = "email should be lowercase only"
+  else return null
+  child.innerText = msg;
+  child.style.color = 'red'; 
+  li.insertBefore(child, input);
+}
+
+window.onload = () => {
+   document.querySelector('#form').addEventListener('submit', (event) => {
+    event.preventDefault();
+    let email = document.forms[0].elements['email'].value;
+    validateEmail(email);
+  }) 
+};
+
 window.addEventListener("load", () => {
   document.getElementById('multiStories').innerHTML = mainProject();
   document.getElementById('popWindow').innerHTML = showPopup();
