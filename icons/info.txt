@@ -1,0 +1,21 @@
+`<section class="center_content">
+        <section class="content_desc">
+          <img src="icons/pro_sec.svg" alt="" />
+          <div class="top_left1">
+            <h2>${item.projectName}</h2>
+            <p></p>
+            <ul>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+            <button id="projectTwo" onclick="clickedButton(this.id)" type="button">See project</button>
+          </div>
+        </section>
+    </section>`
