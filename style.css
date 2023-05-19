@@ -14,6 +14,16 @@ body {
     align-content: center;
   }
 
+  #projectDesc {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    font-style: normal;
+    color: #344563;
+    margin: 0;
+  }
+
   .content_desc img {
     display: none;
   }
@@ -39,6 +49,11 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-top: 24px;
+  }
+
+  .all_info {
+    margin-top: 24px;
   }
 
   .subtitle {
@@ -382,15 +397,13 @@ body {
     z-index: 2;
     visibility: hidden;
   }
-  
+
   .popup_content {
     display: flex;
     flex-direction: column;
     background: #fff;
     border-radius: 2px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 20px;
+    padding: 16px;
   }
 
   .works_content button {
@@ -414,8 +427,8 @@ body {
     padding: 0;
     position: relative;
   }
-  
-  .titleContent h2{
+
+  .titleContent h2 {
     font-family: Roboto, serif;
     font-style: normal;
     font-weight: 700;
@@ -426,7 +439,7 @@ body {
 
   .popup_content ul {
     list-style-type: none;
-    margin-top: 62px;
+    margin-top: 22px;
     margin-bottom: 24px;
     padding: 0;
     display: flex;
@@ -436,6 +449,10 @@ body {
 @media (min-width: 768px) {
   #top_navigation {
     display: none;
+  }
+
+  .content_desc img {
+    width: 100%;
   }
 
   .bottom_section {
@@ -464,6 +481,10 @@ body {
     margin: 0 0 24px 0;
   }
 
+  .image_show img {
+    width: 100%;
+  }
+
   #popup_info img {
     width: 100%;
     height: auto;
@@ -471,6 +492,45 @@ body {
 
   #popup_info {
     margin-right: 25px;
+  }
+
+  .works_content p {
+    margin-top: 0;
+    margin-bottom: 1.5vw;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25vw;
+    text-align: left;
+    line-height: 140%;
+    color: #091e42;
+    display: grid;
+  }
+
+  .top_left1 p {
+    display: none;
+  }
+
+  .contact_content p {
+    margin-top: 0;
+    font-family: "inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.5vmax;
+    line-height: 130%;
+    color: #262626;
+  }
+
+  .content_desc p {
+    margin-right: 3vw;
+    margin-left: 3vw;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vmax;
+    line-height: 150%;
+    color: #fff;
   }
 
   #popup_info p {
@@ -544,10 +604,6 @@ body {
   .main_menu ul {
     display: flex;
     align-items: center;
-  }
-
-  .image_show img {
-    width: 100%;
   }
 
   .desc {
@@ -625,19 +681,6 @@ body {
     margin-bottom: 1.5vw;
   }
 
-  .works_content p {
-    margin-top: 0;
-    margin-bottom: 1.5vw;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25vw;
-    text-align: left;
-    line-height: 140%;
-    color: #091e42;
-    display: grid;
-  }
-
   .content_desc button {
     font-family: "Inter", sans-serif;
     font-style: normal;
@@ -664,10 +707,6 @@ body {
     display: none;
   }
 
-  .top_left1 p {
-    display: none;
-  }
-
   #grid_contentdesc {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -690,16 +729,6 @@ body {
   .contact_form {
     display: flex;
     flex-direction: column;
-  }
-
-  .contact_content p {
-    margin-top: 0;
-    font-family: "inter", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 2.5vmax;
-    line-height: 130%;
-    color: #262626;
   }
 
   .major_menu {
@@ -815,22 +844,6 @@ body {
     font-style: normal;
   }
 
-  .content_desc p {
-    margin-right: 3vw;
-    margin-left: 3vw;
-    text-align: justify;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1vmax;
-    line-height: 150%;
-    color: #fff;
-  }
-
-  .content_desc img {
-    width: 100%;
-  }
-
   .content_desc {
     position: relative;
   }
@@ -882,15 +895,15 @@ body {
     z-index: 2;
     visibility: hidden;
   }
-  
+
   .popup_content {
     display: flex;
     flex-direction: column;
     background: #fff;
     padding: 24px;
   }
-  
-  .desktopView{
+
+  .desktopView {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -901,8 +914,8 @@ body {
     justify-content: space-between;
     padding: 0;
   }
-  
-  .titleContent h2{
+
+  .titleContent h2 {
     font-family: 'Crete Round', serif;
     font-style: normal;
     font-weight: 400;
@@ -934,7 +947,6 @@ body {
 .top_Section > * {
   flex: 1 1 auto;
 }
-
 
 .popup_content li {
   border: 1px solid #8993a4;

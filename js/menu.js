@@ -1,107 +1,109 @@
 function mobileMenu() {
-  const x = document.getElementById("top_navigation");
-  const y = document.querySelector("#ham_button");
-  const z = document.querySelector(".menu_icon h2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-    z.style.visibility = "visible";
-    y.src = "./icons/Union.png";
+  const x = document.getElementById('top_navigation');
+  const y = document.querySelector('#ham_button');
+  const z = document.querySelector('.menu_icon h2');
+  if (x.style.display === 'block') {
+    x.style.display = 'none';
+    z.style.visibility = 'visible';
+    y.src = './icons/Union.png';
   } else {
-    x.style.display = "block";
-    z.style.visibility = "hidden";
-    y.src = "./icons/close.svg";
+    x.style.display = 'block';
+    z.style.visibility = 'hidden';
+    y.src = './icons/close.svg';
   }
 }
 
-const bannerProjects = {
-  projectOne: {
-    projectTitle: "Multi-Post Stories",
+const bannerProjects = [
+  {
+    Name: 'projectOne',
+    projectTitle: 'Multi-Post Stories',
     projectDescription:
       `A daily selection of privately personalized reads; no accounts or
       sign-ups required. has been the industry's standard dummy text
       ever since the 1500s, when an unknown printer took a standard
       dummy text.`,
-    tech: ["CSS","HTML", "Bootstrap", "Ruby"],
-    img: "icons/Works_cont.svg",
-  }
-};
+    tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/Works_cont.svg',
+  },
+];
 
 const projectInfo = [
   {
     id: 1,
-    projectName: "Data Dashboard Healthcare",
+    projectName: 'Data Dashboard Healthcare',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ["HTML", "Bootstrap", "Ruby"],
-    img: "icons/pro_sec.svg",
+    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/pro_sec.svg',
   },
   {
     id: 2,
-    projectName: "Data Dashboard Healthcare",
+    projectName: 'Data Dashboard Healthcare',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ["HTML", "Bootstrap", "Ruby"],
-    img: "icons/Data_content_image.svg",
+    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/Data_content_image.svg',
   },
   {
     id: 3,
-    projectName: "Website Portfolio",
+    projectName: 'Website Portfolio',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ["HTML", "Bootstrap", "Ruby"],
-    img: "icons/website.svg",
+    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/website.svg',
   },
   {
     id: 4,
-    projectName: "Profesional Art Printing Data",
+    projectName: 'Profesional Art Printing Data',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ["HTML", "Bootstrap", "Ruby"],
-    img: "icons/professional.svg",
+    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/professional.svg',
   },
   {
     id: 5,
-    projectName: "Data Dashboard Healthcare",
+    projectName: 'Data Dashboard Healthcare',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ["HTML", "Bootstrap", "Ruby"],
-    img: "icons/Data_content_image.svg",
+    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/Data_content_image.svg',
   },
   {
     id: 6,
-    projectName: "Website Portfolio",
+    projectName: 'Website Portfolio',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ["HTML", "Bootstrap", "Ruby"],
-    img: "icons/website.svg",
+    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    img: 'icons/website.svg',
   },
 ];
 
-function mainProject(){
+function mainProject() {
+  const presentProject = bannerProjects[0];
   const headlineProject = `<section class="works_content">
-  <img src=${bannerProjects.projectOne.img} class="image_placement" alt="The Banner" />
+  <img src=${presentProject.img} class="image_placement" alt="The Banner" />
   <div class="text_placement">
-    <h2>${bannerProjects.projectOne.projectTitle}</h2>
-    <p>${bannerProjects.projectOne.projectDescription}</p>
+    <h2>${presentProject.projectTitle}</h2>
+    <p>${presentProject.projectDescription}</p>
     <ul>
       <li>
-        <a href="#">${bannerProjects.projectOne.tech[0]}</a>
+        <a href="#">${presentProject.tech[0]}</a>
       </li>
       <li>
-        <a href="#">${bannerProjects.projectOne.tech[1]}</a>
+        <a href="#">${presentProject.tech[1]}</a>
       </li>
       <li>
-        <a href="#">${bannerProjects.projectOne.tech[2]}</a>
+        <a href="#">${presentProject.tech[2]}</a>
       </li>
       <li>
-        <a href="#">${bannerProjects.projectOne.tech[3]}</a>
+        <a href="#">${presentProject.tech[3]}</a>
       </li>
     </ul>
-    <button id="projectOne" onclick="clickedButton(this.id)" type="button">See project</button>
+    <button id=${presentProject.Name} onclick="clickedButton(this.id)" type="button">See project</button>
   </div>
-</section>`
+</section>`;
 
-return headlineProject;
+  return headlineProject;
 }
 
 const showSections = () => {
@@ -130,8 +132,8 @@ const showSections = () => {
       </div>
     </section>
   </section>`;
-    } else {
-      return `<section class="center_content">
+    }
+    return `<section class="center_content">
   <section class="content_desc">
     <img src=${item.img} alt="" />
     <div class="top_left">
@@ -154,14 +156,13 @@ const showSections = () => {
     </div>
   </section>
 </section>`;
-    }
   });
 
   return divCard;
 };
 
 // The popup window
-function showPopup(){
+function showPopup() {
   const pop = `<div class="popup">
   <div class="popup_content">
     <div class="titleContent">
@@ -197,51 +198,51 @@ function showPopup(){
       </div>
     </div>
   </div>
-</div>`
+</div>`;
 
-return pop;
-
+  return pop;
 }
 
-function clickedButton(the_id) {
-  let savedInfo = the_id;
-  let titleSelect = document.getElementById("headingSection");
-  let paragraphSelect = document.getElementById("projectDesc");
-  let img = document.getElementById("popup-img");
+function clickedButton(theId) {
+  const savedInfo = theId;
+  const titleSelect = document.getElementById('headingSection');
+  const paragraphSelect = document.getElementById('projectDesc');
+  const img = document.getElementById('popup-img');
+  const images = document.querySelector('#popup_info #popup-img');
+  const popWin = document.querySelector('.popup');
 
-  const images = document.querySelector("#popup_info #popup-img");
-  const popWin = document.querySelector(".popup");
-
-  projectInfo.forEach((e, i) => {  
-    let project = i;
+  projectInfo.forEach((e, i) => {
+    const project = i;
     if (projectInfo[project].id === Number(savedInfo)) {
       titleSelect.innerHTML = projectInfo[project].projectName;
       paragraphSelect.innerHTML = projectInfo[project].projectInfo;
-      popWin.style.visibility = "visible";
+      popWin.style.visibility = 'visible';
       img.src = projectInfo[project].img;
-    } 
-  })
-
-  for (let bannerPrj in bannerProjects ){
-    if(bannerPrj === savedInfo){
-      titleSelect.innerHTML = bannerProjects[bannerPrj].projectTitle;
-      paragraphSelect.innerHTML = bannerProjects[bannerPrj].projectDescription;
-      images.src= bannerProjects[bannerPrj].img
-      popWin.style.visibility = "visible";
     }
-  }
+  });
 
+  bannerProjects.forEach((bannerPrj) => {
+    if (bannerPrj.Name === savedInfo) {
+      titleSelect.innerHTML = bannerPrj.projectTitle;
+      paragraphSelect.innerHTML = bannerPrj.projectDescription;
+      images.src = bannerPrj.img;
+      popWin.style.visibility = 'visible';
+    }
+  });
 }
 
-//close popup window
+clickedButton();
+
+// close popup window
 function closed() {
-  const popWin = document.querySelector(".popup");
-  popWin.style.visibility = "hidden";
+  const popWin = document.querySelector('.popup');
+  popWin.style.visibility = 'hidden';
 }
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   document.getElementById('multiStories').innerHTML = mainProject();
   document.getElementById('popWindow').innerHTML = showPopup();
-  document.getElementById("grid_contentdesc").innerHTML =
-    showSections().join("");
+  document.getElementById('grid_contentdesc').innerHTML = showSections().join('');
 });
+mobileMenu();
+closed();
