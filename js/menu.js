@@ -236,31 +236,32 @@ function closed() {
   popWin.style.visibility = "hidden";
 }
 
-function validateEmail(email) {
+function validateEmail(event) {
+  event.preventDefault();
+  let email = document.forms[0].elements['Email'].value
+  // check email
   const res = email.match(/[A-Z]/g);
-  const input = document.querySelector('form #li-btn input')
-  const li = document.querySelector("form #li-btn");
+  const btn = document.querySelector('form #form_btn')
+  const container = document.querySelector("form #form-btn-container");
   const child = document.createElement('small')
   let msg = '';
-
+  
+  alert('OK');
   if (res) msg = "email should be lowercase only"
   else return null
   child.innerText = msg;
   child.style.color = 'red'; 
-  li.insertBefore(child, input);
+  container.insertBefore(child, btn);
 }
 
 window.onload = () => {
-   document.querySelector('#form').addEventListener('submit', (event) => {
-    event.preventDefault();
-    let email = document.forms[0].elements['email'].value;
-    validateEmail(email);
-  }) 
-};
+  document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));  
+}
 
 window.addEventListener("load", () => {
   document.getElementById('multiStories').innerHTML = mainProject();
   document.getElementById('popWindow').innerHTML = showPopup();
   document.getElementById("grid_contentdesc").innerHTML =
     showSections().join("");
+  
 });
