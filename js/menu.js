@@ -186,7 +186,7 @@ function showPopup(){
     </ul>
     <div class="desktopView">
       <div id="popup_info">
-        <img src="icons/Snapshoot Portfolio.jpg" alt="Portfolio">
+        <img src="icons/Snapshoot Portfolio.jpg" id="theImage" alt="Portfolio">
       </div>
       <div class ="all_info">
         <p id="projectDesc"></p>
@@ -203,12 +203,11 @@ return pop;
 
 }
 
-
 function clickedButton(the_id) {
   let savedInfo = the_id;
   let titleSelect = document.getElementById("headingSection");
   let paragraphSelect = document.getElementById("projectDesc");
-  const images = document.querySelector(".popup_info ");
+  const images = document.getElementById("theImage");
   const popWin = document.querySelector(".popup");
 
   for (let project = 0; project < projectInfo.length; project++) {
@@ -223,7 +222,7 @@ function clickedButton(the_id) {
     if(bannerPrj === savedInfo){
       titleSelect.innerHTML = bannerProjects[bannerPrj].projectTitle;
       paragraphSelect.innerHTML = bannerProjects[bannerPrj].projectDescription;
-      images.src= bannerProjects[bannerPrj].
+      console.log(images);
       popWin.style.visibility = "visible";
     }
   }
