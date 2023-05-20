@@ -235,6 +235,7 @@ function closed() {
   popWin.style.visibility = 'hidden';
 }
 
+// Add_validation_form
 function validateEmail(event) {
   event.preventDefault();
   const email = document.forms[0].elements.Email.value;
