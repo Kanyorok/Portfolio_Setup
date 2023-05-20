@@ -235,6 +235,34 @@ function closed() {
   popWin.style.visibility = 'hidden';
 }
 
+// Add_validation_form
+function validateEmail(event) {
+  const email = document.forms[0].elements.Email.value;
+  // check email
+  const res = email.match(/[A-Z]/g);
+  const btn = document.querySelector('form #form_btn');
+  const container = document.querySelector('form #form-btn-container');
+  const child = document.createElement('h2');
+  let msg = '';
+
+  if (res) {
+    msg = 'Error:Form was not Sent! The email should be lowercase only';
+    event.preventDefault();
+  } else return;
+
+  child.innerText = msg;
+  child.style.color = 'red';
+  container.insertBefore(child, btn);
+
+  setTimeout(() => {
+    child.remove();
+  }, 3000);
+}
+
+window.onload = () => {
+  document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
+};
+
 window.addEventListener('load', () => {
   document.getElementById('multiStories').innerHTML = mainProject();
   document.getElementById('popWindow').innerHTML = showPopup();
