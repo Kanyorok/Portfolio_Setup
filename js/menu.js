@@ -192,8 +192,8 @@ function showPopup() {
       <div class ="all_info">
         <p id="projectDesc"></p>
         <div class="bottom_section">
-          <button id="projectSeven" type="button">See project <img src="icons/live_icon.svg" alt=""></button>
-          <button id="projectSeven" type="button">See project <img src="icons/github_2.svg"> </button>
+          <button id="projectSeven" type="button">See project <img src="icons/live_icon.svg" alt="" class="btnIcon"></button>
+          <button id="projectSeven" type="button">See project <img src="icons/github_2.svg" class="btnIcon"> </button>
         </div>
       </div>
     </div>
@@ -207,8 +207,6 @@ function clickedButton(theId) {
   const savedInfo = theId;
   const titleSelect = document.getElementById('headingSection');
   const paragraphSelect = document.getElementById('projectDesc');
-  const img = document.getElementById('popup-img');
-  const images = document.querySelector('#popup_info #popup-img');
   const popWin = document.querySelector('.popup');
 
   projectInfo.forEach((e, i) => {
@@ -217,7 +215,6 @@ function clickedButton(theId) {
       titleSelect.innerHTML = projectInfo[project].projectName;
       paragraphSelect.innerHTML = projectInfo[project].projectInfo;
       popWin.style.visibility = 'visible';
-      img.src = projectInfo[project].img;
     }
   });
 
@@ -225,7 +222,6 @@ function clickedButton(theId) {
     if (bannerPrj.Name === savedInfo) {
       titleSelect.innerHTML = bannerPrj.projectTitle;
       paragraphSelect.innerHTML = bannerPrj.projectDescription;
-      images.src = bannerPrj.img;
       popWin.style.visibility = 'visible';
     }
   });

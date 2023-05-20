@@ -47,7 +47,7 @@ body {
 
   .bottom_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 20px;
     margin-top: 24px;
   }
@@ -392,9 +392,9 @@ body {
     background: rgba(0, 0, 0, 0.7);
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 39px;
-    padding-top: 60px;
     z-index: 2;
+    display: flex;
+    align-items: center;
     visibility: hidden;
   }
 
@@ -457,7 +457,7 @@ body {
 
   .bottom_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 76px;
   }
 
@@ -965,6 +965,10 @@ body {
   color: #3c3a39;
 }
 
+.btnIcon {
+  margin-left: 15px;
+}
+
 .bottom_section button {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -975,6 +979,9 @@ body {
   color: #fff;
   border: 1px #ff6b00;
   padding: 10px 12px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts {
