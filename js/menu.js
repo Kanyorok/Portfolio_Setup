@@ -263,10 +263,32 @@ window.onload = () => {
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
 };
 
+function manageData(parsedInfo) {
+  parsedInfo.preventDefault();
+  const form = document.querySelector('#form');
+  const formData = {
+    fullName: form.elements.fullname.value,
+    email: form.elements.email.value,
+    message: form.elements.message.value,
+  };
+
+  sessionStorage.setItem('formData', JSON.stringify(formData));
+}
+
+function handleRefresh() {
+  const formData = JSON.parse(sessionStorage.getItem('formData'));
+  const form = document.querySelector('#form');
+  form.elements.fullName.value = formData.fullname;
+  form.elements.email.value = formData.email;
+  form.elements.message.value = formData.message;
+}
+
 window.addEventListener('load', () => {
   document.getElementById('multiStories').innerHTML = mainProject();
   document.getElementById('popWindow').innerHTML = showPopup();
   document.getElementById('grid_contentdesc').innerHTML = showSections().join('');
+  document.querySelector('#form').addEventListener('input', (parsedInfo) => manageData(parsedInfo));
+  handleRefresh();
 });
 mobileMenu();
 closed();
