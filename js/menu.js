@@ -245,7 +245,7 @@ function validateEmail(event) {
   let msg = '';
 
   if (res) {
-    msg = 'email should be lowercase only';
+    msg = 'Error:Form was not Sent! The email should be lowercase only';
     event.preventDefault();
   } else return;
 
