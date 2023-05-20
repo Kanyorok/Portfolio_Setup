@@ -236,21 +236,26 @@ function closed() {
 }
 
 function validateEmail(event) {
-  event.preventDefault();
   const email = document.forms[0].elements.Email.value;
   // check email
   const res = email.match(/[A-Z]/g);
   const btn = document.querySelector('form #form_btn');
   const container = document.querySelector('form #form-btn-container');
-  const child = document.createElement('small');
+  const child = document.createElement('h2');
   let msg = '';
 
-  if (res) msg = 'Error:Form was not Sent! The email should be lowercase only';
-  else return null;
+  if (res) {
+    msg = 'email should be lowercase only';
+    event.preventDefault();
+  } else return;
+
   child.innerText = msg;
   child.style.color = 'red';
   container.insertBefore(child, btn);
-  return email;
+
+  setTimeout(() => {
+    child.remove();
+  }, 3000);
 }
 
 window.onload = () => {
