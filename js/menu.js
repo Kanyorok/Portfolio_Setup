@@ -107,7 +107,7 @@ function mainProject() {
 }
 
 const showSections = () => {
-  const divCard = projectInfo.map((item) => {
+  const divCard = project.map((item) => {
     if (item.id === 1) {
       return `<section class="center_content">
     <section class="content_desc">
@@ -137,7 +137,7 @@ const showSections = () => {
   <section class="content_desc">
     <img src=${item.img} alt="" />
     <div class="top_left">
-      <h2>${item.projectName}</h2>
+      <h2>${item.projectname}</h2>
       <p>
        ${item.projectInfo}
       </p>
