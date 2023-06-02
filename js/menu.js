@@ -107,7 +107,7 @@ function mainProject() {
 }
 
 const showSections = () => {
-  const divCard = projectInfo.map((item) => {
+  const divCard = project.map((item) => {
     if (item.id === 1) {
       return `<section class="center_content">
     <section class="content_desc">
@@ -137,7 +137,7 @@ const showSections = () => {
   <section class="content_desc">
     <img src=${item.img} alt="" />
     <div class="top_left">
-      <h2>${item.projectName}</h2>
+      <h2>${item.projectname}</h2>
       <p>
        ${item.projectInfo}
       </p>
@@ -263,10 +263,32 @@ window.onload = () => {
   document.querySelector('#form').addEventListener('submit', (event) => validateEmail(event));
 };
 
+function manageData(parsedInfo) {
+  parsedInfo.preventDefault();
+  const form = document.querySelector('#form');
+  const formData = {
+    fullName: form.elements.fullname.value,
+    email: form.elements.email.value,
+    message: form.elements.message.value,
+  };
+
+  sessionStorage.setItem('formData', JSON.stringify(formData));
+}
+
+function handleRefresh() {
+  const formData = JSON.parse(sessionStorage.getItem('formData'));
+  const form = document.querySelector('#form');
+  form.elements.fullName.value = formData.fullname;
+  form.elements.email.value = formData.email;
+  form.elements.message.value = formData.message;
+}
+
 window.addEventListener('load', () => {
   document.getElementById('multiStories').innerHTML = mainProject();
   document.getElementById('popWindow').innerHTML = showPopup();
   document.getElementById('grid_contentdesc').innerHTML = showSections().join('');
+  document.querySelector('#form').addEventListener('input', (parsedInfo) => manageData(parsedInfo));
+  handleRefresh();
 });
 mobileMenu();
 closed();
