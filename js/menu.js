@@ -137,7 +137,7 @@ const showSections = () => {
   <section class="content_desc">
     <img src=${item.img} alt="" />
     <div class="top_left">
-      <h2>${item.projectname}</h2>
+      <h2>${item.projectName}</h2>
       <p>
        ${item.projectInfo}
       </p>
