@@ -107,7 +107,7 @@ function mainProject() {
 }
 
 const showSections = () => {
-  const divCard = project.map((item) => {
+  const divCard = projectInfo.map((item) => {
     if (item.id === 1) {
       return `<section class="center_content">
     <section class="content_desc">
