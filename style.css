@@ -695,10 +695,6 @@ body {
     height: 48px;
   }
 
-  .top_left button {
-    display: none;
-  }
-
   .top_left1 h2 {
     display: none;
   }
@@ -850,8 +846,9 @@ body {
 
   .top_left {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
   }
 
   .top_left1 {
