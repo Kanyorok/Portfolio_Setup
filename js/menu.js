@@ -30,11 +30,11 @@ const bannerProjects = [
 const projectInfo = [
   {
     id: 1,
-    projectName: 'Data Dashboard Healthcare',
+    projectName: 'Todo App to Manage your Tasks',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/pro_sec.svg',
+      "A daily tracking of privately personalized activities; no accounts or sign-ups required.",
+    tech: ['HTML', 'CSS', 'Javascript'],
+    img: 'icons/assets/todo.png',
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const projectInfo = [
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
     tech: ['HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/Data_content_image.svg',
+    img: 'icons/assets/todo.png',
   },
   {
     id: 3,
@@ -127,8 +127,8 @@ const showSections = () => {
           <a href="#">${item.tech[2]}</a>
         </li>
       </ul>
-      <button id=${item.id} onclick="clickedButton(this.id)" type="button">See project</button>
     </div>
+    <button id=${item.id} onclick="clickedButton(this.id)" type="button">See project</button>
   </section>
 </section>`;
   });
