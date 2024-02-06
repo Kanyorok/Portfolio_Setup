@@ -32,7 +32,7 @@ const projectInfo = [
     id: 1,
     projectName: 'Todo App to Manage your Tasks',
     projectInfo:
-      "A daily tracking of privately personalized activities; no accounts or sign-ups required.",
+      'A daily tracking of privately personalized activities; no accounts or sign-ups required.',
     tech: ['HTML', 'CSS', 'Javascript'],
     img: 'icons/assets/todo.png',
   },
