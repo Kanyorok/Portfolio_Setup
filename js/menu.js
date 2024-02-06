@@ -107,8 +107,7 @@ function mainProject() {
 }
 
 const showSections = () => {
-  const divCard = projectInfo.map((item) => {
-    return `<section class="center_content">
+  const divCard = projectInfo.map((item) => `<section class="center_content">
   <section class="content_desc">
     <img src=${item.img} alt="" />
     <div class="top_left">
@@ -130,8 +129,7 @@ const showSections = () => {
       <button id=${item.id} onclick="clickedButton(this.id)" type="button">See project</button>
     </div>
   </section>
-</section>`;
-  });
+</section>`);
 
   return divCard;
 };
