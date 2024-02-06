@@ -108,31 +108,6 @@ function mainProject() {
 
 const showSections = () => {
   const divCard = projectInfo.map((item) => {
-    if (item.id === 1) {
-      return `<section class="center_content">
-    <section class="content_desc">
-      <img src=${item.img} alt="" />
-      <div class="top_left1">
-      <h2>${item.projectName}</h2>
-      <p>
-       ${item.projectInfo}
-      </p>
-      <ul>
-        <li>
-          <a href="#">${item.tech[0]}</a>
-        </li>
-        <li>
-          <a href="#">${item.tech[1]}</a>
-        </li>
-        <li>
-          <a href="#">${item.tech[2]}</a>
-        </li>
-        </ul>
-        <button id=${item.id} onclick="clickedButton(this.id)" type="button">See project</button>
-      </div>
-    </section>
-  </section>`;
-    }
     return `<section class="center_content">
   <section class="content_desc">
     <img src=${item.img} alt="" />
