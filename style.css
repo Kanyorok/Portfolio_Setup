@@ -699,6 +699,21 @@ body {
     display: none;
   }
 
+  .works_content button {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.0625vmax;
+    line-height: 141%;
+    background: #ff6b00;
+    color: #fff;
+    border: 1px #ff6b00;
+    padding: 0.75vw;
+    width: 7.75vw;
+    height: 48px;
+    transition: height 2s, background-color 2s, rotate 2s;
+  }
+
   .content_desc:hover .top_left button {
     display: block;
   }
@@ -868,21 +883,6 @@ body {
   .image_placement {
     width: 100%;
     height: auto;
-  }
-
-  .works_content button {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.0625vmax;
-    line-height: 141%;
-    background: #ff6b00;
-    color: #fff;
-    border: 1px #ff6b00;
-    padding: 0.75vw;
-    width: 7.75vw;
-    height: 48px;
-    transition: height 2s, background-color 2s, rotate 2s;
   }
 
   .popup {
