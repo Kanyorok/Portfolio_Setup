@@ -32,7 +32,7 @@ const projectInfo = [
     id: 1,
     projectName: 'Todo App to Manage your Tasks',
     projectInfo:
-      "A daily tracking of privately personalized activities; no accounts or sign-ups required.",
+      'A daily tracking of privately personalized activities; no accounts or sign-ups required.',
     tech: ['HTML', 'CSS', 'Javascript'],
     img: 'icons/assets/todo.png',
   },
@@ -107,8 +107,7 @@ function mainProject() {
 }
 
 const showSections = () => {
-  const divCard = projectInfo.map((item) => {
-    return `<section class="center_content">
+  const divCard = projectInfo.map((item) => `<section class="center_content">
   <section class="content_desc">
     <img src=${item.img} alt="" />
     <div class="top_left">
@@ -130,8 +129,7 @@ const showSections = () => {
     </div>
     <button id=${item.id} onclick="clickedButton(this.id)" type="button">See project</button>
   </section>
-</section>`;
-  });
+</section>`);
 
   return divCard;
 };
