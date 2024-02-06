@@ -694,7 +694,7 @@ body {
     width: 100%;
     height: 48px;
   }
-  
+
   .top_left button {
     display: none;
   }
@@ -717,7 +717,7 @@ body {
   .content_desc:hover .top_left button {
     display: block;
   }
-  
+
   .top_left1 h2 {
     display: none;
   }
