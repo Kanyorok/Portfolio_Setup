@@ -16,14 +16,16 @@ function mobileMenu() {
 const bannerProjects = [
   {
     Name: 'projectOne',
-    projectTitle: 'Multi-Post Stories',
+    projectTitle: 'SpaceX App',
     projectDescription:
-      `A daily selection of privately personalized reads; no accounts or
-      sign-ups required. has been the industry's standard dummy text
-      ever since the 1500s, when an unknown printer took a standard
-      dummy text.`,
-    tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/Works_cont.svg',
+      `In this task, we have worked with the real live data 
+      from the SpaceX API. Our task was to build a web 
+      application for a company that provides commercial 
+      and scientific space travel services. The application 
+      allows users to book rockets and join selected 
+      space missions.`,
+    tech: ['CSS', 'HTML', 'Reactjs', 'Javascript'],
+    img: 'icons/spacex.png',
   },
 ];
 
@@ -148,16 +150,16 @@ function showPopup() {
     </div>
     <ul>
       <li>
-        <a href="#">CSS</a>
+        <a id="first_tech" href="#">CSS</a>
       </li>
       <li>
-        <a href="#">HTML</a>
+        <a id="second_tech" href="#">HTML</a>
       </li>
       <li>
-        <a href="#">BOOTSTRAP</a>
+        <a id="third_tech" href="#">BOOTSTRAP</a>
       </li>
       <li>
-        <a href="#">RUBY</a>
+        <a id="fourth_tech" href="#">RUBY</a>
       </li>
     </ul>
     <div class="desktopView">
@@ -182,6 +184,11 @@ function clickedButton(theId) {
   const savedInfo = theId;
   const titleSelect = document.getElementById('headingSection');
   const paragraphSelect = document.getElementById('projectDesc');
+  const popImage = document.getElementById('popup-img')
+  const firstTech = document.getElementById('first_tech')
+  const secTech = document.getElementById('second_tech')
+  const thirdTech = document.getElementById('third_tech')
+  const fourthTech = document.getElementById('fourth_tech')
   const popWin = document.querySelector('.popup');
 
   projectInfo.forEach((e, i) => {
@@ -197,6 +204,11 @@ function clickedButton(theId) {
     if (bannerPrj.Name === savedInfo) {
       titleSelect.innerHTML = bannerPrj.projectTitle;
       paragraphSelect.innerHTML = bannerPrj.projectDescription;
+      popImage.src = bannerPrj.img;
+      firstTech.innerHTML = bannerPrj.tech[0];
+      secTech.innerHTML = bannerPrj.tech[1];
+      thirdTech.innerHTML = bannerPrj.tech[2];
+      fourthTech.innerHTML = bannerPrj.tech[3];
       popWin.style.visibility = 'visible';
     }
   });
