@@ -32,42 +32,42 @@ const bannerProjects = [
 const projectInfo = [
   {
     id: 1,
-    projectName: 'Data Dashboard Healthcare',
+    projectName: 'Budget Application',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/pro_sec.svg',
+      "RubyBudget is a cutting-edge personal budget app meticulously crafted using the power and elegance of Ruby on Rails. With its sleek design and intuitive interface, RubyBudget empowers users to take control of their finances effortlessly. Track your income and expenses, set budget goals, and receive insightful financial reports.",
+    tech: ['HTML', 'RoR', 'Postgres', 'CSS'],
+    img: 'icons/budget_app.png',
   },
   {
     id: 2,
-    projectName: 'Data Dashboard Healthcare',
+    projectName: 'Weather Application',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/Data_content_image.svg',
+      "This project is about building a mobile web application to check a list of air pollution metrics about dynamic changes in different places that I have created using of React and Redux.",
+    tech: ['HTML', 'CSS', 'API', 'JS'],
+    img: 'icons/weather.png',
   },
   {
     id: 3,
-    projectName: 'Website Portfolio',
+    projectName: 'BookStore',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/website.svg',
+      "The Bookstore is a website similar to the \"Awesome Books\". I have created a simplified version of it that allows a user to: Display a list of books, Add a book, and Remove a selected book.",
+    tech: ['React', 'Redux', 'API', 'CSS'],
+    img: 'icons/books.png',
   },
   {
     id: 4,
-    projectName: 'Profesional Art Printing Data',
+    projectName: 'Maths Magician App',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
-    img: 'icons/professional.svg',
+      "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.",
+    tech: ['HTML', 'ReactJs', 'Redux', 'CSS'],
+    img: 'icons/maths.png',
   },
   {
     id: 5,
     projectName: 'Data Dashboard Healthcare',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    tech: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
     img: 'icons/Data_content_image.svg',
   },
   {
@@ -75,7 +75,7 @@ const projectInfo = [
     projectName: 'Website Portfolio',
     projectInfo:
       "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    tech: ['HTML', 'Bootstrap', 'Ruby'],
+    tech: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
     img: 'icons/website.svg',
   },
 ];
@@ -112,7 +112,7 @@ const showSections = () => {
   const divCard = projectInfo.map((item) => {
     return `<section class="center_content">
   <section class="content_desc">
-    <img src=${item.img} alt="" />
+    <img class="image_placement" src=${item.img} alt="" />
     <div class="top_left">
       <h2>${item.projectName}</h2>
       <p>
@@ -127,6 +127,9 @@ const showSections = () => {
         </li>
         <li>
           <a href="#">${item.tech[2]}</a>
+        </li>
+        <li>
+          <a href="#">${item.tech[3]}</a>
         </li>
       </ul>
       <button id=${item.id} onclick="clickedButton(this.id)" type="button">See project</button>
@@ -196,6 +199,11 @@ function clickedButton(theId) {
     if (projectInfo[project].id === Number(savedInfo)) {
       titleSelect.innerHTML = projectInfo[project].projectName;
       paragraphSelect.innerHTML = projectInfo[project].projectInfo;
+      popImage.src = projectInfo[project].img;
+      firstTech.innerHTML = projectInfo[project].tech[0];
+      secTech.innerHTML = projectInfo[project].tech[1];
+      thirdTech.innerHTML = projectInfo[project].tech[2];
+      fourthTech.innerHTML = projectInfo[project].tech[3];
       popWin.style.visibility = 'visible';
     }
   });
