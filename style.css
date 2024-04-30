@@ -2,6 +2,10 @@ body {
   margin: 0;
   padding: 0;
 }
+.logo {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 767px) {
   .top_Section {
