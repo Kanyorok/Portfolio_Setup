@@ -26,6 +26,8 @@ const bannerProjects = [
       space missions.`,
     tech: ['CSS', 'HTML', 'Reactjs', 'Javascript'],
     img: 'icons/spacex.png',
+    live: 'https://bookrocketnasa.onrender.com/',
+    git: 'https://github.com/Kanyorok/spacex-project'
   },
 ];
 
@@ -172,8 +174,8 @@ function showPopup() {
       <div class ="all_info">
         <p id="projectDesc"></p>
         <div class="bottom_section">
-          <button id="projectSeven" type="button">See project <img src="icons/live_icon.svg" alt="" class="btnIcon"></button>
-          <button id="projectSeven" type="button">See project <img src="icons/github_2.svg" class="btnIcon"> </button>
+          <a href="" id="extlink"><button id="projectSeven" type="button">See project <img src="icons/live_icon.svg" alt="" class="btnIcon"></button></a>
+          <a href="" id="gitlink"><button id="projectSeven" type="button">See project <img src="icons/github_2.svg" class="btnIcon"> </button></a>
         </div>
       </div>
     </div>
@@ -192,6 +194,8 @@ function clickedButton(theId) {
   const secTech = document.getElementById('second_tech')
   const thirdTech = document.getElementById('third_tech')
   const fourthTech = document.getElementById('fourth_tech')
+  const livelink = document.getElementById('extlink')
+  const gitlink = document.getElementById('gitlink')
   const popWin = document.querySelector('.popup');
 
   projectInfo.forEach((e, i) => {
@@ -217,6 +221,8 @@ function clickedButton(theId) {
       secTech.innerHTML = bannerPrj.tech[1];
       thirdTech.innerHTML = bannerPrj.tech[2];
       fourthTech.innerHTML = bannerPrj.tech[3];
+      livelink.href = bannerPrj.live;
+      gitlink.href = bannerPrj.git;
       popWin.style.visibility = 'visible';
     }
   });
