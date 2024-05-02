@@ -39,6 +39,8 @@ const projectInfo = [
       "With its sleek design and intuitive interface, RubyBudget empowers users to track income and expenses, set budget goals, and receive insightful financial reports.",
     tech: ['HTML', 'RoR', 'Postgres', 'CSS'],
     img: 'icons/budget_app.png',
+    live: 'https://robbudget.onrender.com/',
+    git: 'https://github.com/Kanyorok/Robert-RubyBudget'
   },
   {
     id: 2,
@@ -47,6 +49,8 @@ const projectInfo = [
       "This project is about building a mobile web application to check a list of air pollution metrics about dynamic changes in different places that I have created using of React and Redux.",
     tech: ['HTML', 'CSS', 'API', 'JS'],
     img: 'icons/weather.png',
+    live: 'https://climaticvals.onrender.com/',
+    git: 'https://github.com/Kanyorok/air-pollution-aqi'
   },
   {
     id: 3,
@@ -55,6 +59,8 @@ const projectInfo = [
       "The Bookstore is a website similar to the \"Awesome Books\". I have created a simplified version of it that allows a user to: Display a list of books, Add a book, and Remove a selected book.",
     tech: ['React', 'Redux', 'API', 'CSS'],
     img: 'icons/books.png',
+    live: 'https://bookstore-2z7g.onrender.com/',
+    git: 'https://github.com/Kanyorok/bookstore'
   },
   {
     id: 4,
@@ -63,22 +69,28 @@ const projectInfo = [
       "Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to: Make simple calculations. Read a random math-related quote.",
     tech: ['HTML', 'ReactJs', 'Redux', 'CSS'],
     img: 'icons/maths.png',
+    live: 'https://calm-pavlova-636a7b.netlify.app/',
+    git: 'https://github.com/Kanyorok/mathmagician'
   },
   {
     id: 5,
-    projectName: 'Data Dashboard Healthcare',
+    projectName: 'Tourism Talk Website',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      "A replica of a commercial website that showcases skill in creating responsive website using the mobile-first approach",
     tech: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
     img: 'icons/Data_content_image.svg',
+    live: 'https://kanyorok.github.io/CaptstoneProject/',
+    git: 'https://github.com/Kanyorok/CaptstoneProject'
   },
   {
     id: 6,
-    projectName: 'Website Portfolio',
+    projectName: 'TO-DO App',
     projectInfo:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+      "In this project, I have built a simple HTML list of To Do tasks. This simple web page is built using webpack and served by a webpack dev server.",
     tech: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
     img: 'icons/website.svg',
+    live: 'https://kanyorok.github.io/To-DoList/dist/',
+    git: 'https://github.com/Kanyorok/To-DoList'
   },
 ];
 
@@ -208,6 +220,8 @@ function clickedButton(theId) {
       secTech.innerHTML = projectInfo[project].tech[1];
       thirdTech.innerHTML = projectInfo[project].tech[2];
       fourthTech.innerHTML = projectInfo[project].tech[3];
+      livelink.href = projectInfo[project].live;
+      gitlink.href = projectInfo[project].git;
       popWin.style.visibility = 'visible';
     }
   });
