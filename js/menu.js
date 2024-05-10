@@ -290,14 +290,15 @@ function manageData(parsedInfo) {
   sessionStorage.setItem('formData', JSON.stringify(formData));
 }
 
-function downloadResume() {
-  const link = document.createElement('a');
-  link.href = 'CV/Robert_Kanyoro__Resume_Fullstack.pdf';
+function setupDownloadButton() {
+      const link = document.createElement('a');
+      link.href = 'CV/Robert_Kanyoro__Resume_Fullstack.pdf';
+      link.download = 'CV/Robert_Kanyoro__Resume_Fullstack.pdf';
 
-  link.download = 'robert-fullstackdev-resume.pdf';
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      console.log('working');
 }
 
 function handleRefresh() {
@@ -314,7 +315,9 @@ window.addEventListener('load', () => {
   document.getElementById('grid_contentdesc').innerHTML = showSections().join('');
   document.querySelector('#form').addEventListener('input', (parsedInfo) => manageData(parsedInfo));
   handleRefresh();
+  setupDownloadButton();
 });
+
 mobileMenu();
 closed();
-downloadResume();
+
