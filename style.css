@@ -223,7 +223,7 @@ body {
 
   .content_desc {
     position: relative;
-    width: 86%;
+    width: 91%;
   }
 
   .center_content {
@@ -667,7 +667,7 @@ body {
   .works_title {
     border-bottom: 2px solid #212121;
     height: 30px;
-    margin-bottom: 140px;
+    margin-bottom: 70px;
     margin-left: 154px;
     margin-right: 217px;
   }
@@ -932,9 +932,8 @@ body {
     color: #fff;
     border: 1px #ff6b00;
     padding: 0.75vw;
-    width: 7.75vw;
+    width: 8.75vw;
     height: 48px;
-    transition: height 2s, background-color 2s, rotate 2s;
   }
 
   .popup {
@@ -1013,6 +1012,14 @@ body {
     display: flex;
     align-items: center;
   }
+}
+
+#multiStories {
+  margin-bottom: 50px;
+}
+
+.info_starter {
+  text-align: justify !important;
 }
 
 .top_Section > * {
@@ -1133,7 +1140,6 @@ body {
   color: #fff;
   border: 1px #ff6b00;
   padding: 12px;
-  transition: height 2s, background-color 2s, rotate 2s;
 }
 
 .about_footer hr {

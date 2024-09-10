@@ -16,31 +16,29 @@ function mobileMenu() {
 const bannerProjects = [
   {
     Name: 'projectOne',
-    projectTitle: 'SpaceX App',
+    projectTitle: 'Ecommerce Site',
     projectDescription:
-      `In this task, we have worked with the real live data 
-      from the SpaceX API. Our task was to build a web 
-      application for a company that provides commercial 
-      and scientific space travel services. The application 
-      allows users to book rockets and join selected 
-      space missions.`,
-    tech: ['CSS', 'HTML', 'Reactjs', 'Javascript'],
-    img: 'icons/spacex.png',
-    live: 'https://bookrocketnasa.onrender.com/',
-    git: 'https://github.com/Kanyorok/spacex-project'
+      `This an ecommerce site that is made using Reactjs frontend
+      and Nodejs framework. The site is a solution to make a digital
+      solution to sell products online. It covers all major features
+      such as add to cart, payment gateway, shipment, and many more.`,
+    tech: ['CSS', 'HTML', 'Reactjs','Nodejs'],
+    img: 'icons/ecommerce.png',
+    live: 'https://kamandoradesigns.com/',
+    git: 'https://github.com/Kanyorok'
   },
 ];
 
 const projectInfo = [
   {
     id: 1,
-    projectName: 'Budget Application',
+    projectName: 'School Website',
     projectInfo:
-      "With its sleek design and intuitive interface, RubyBudget empowers users to track income and expenses, set budget goals, and receive insightful financial reports.",
-    tech: ['HTML', 'RoR', 'Postgres', 'CSS'],
-    img: 'icons/budget_app.png',
-    live: 'https://robbudget.onrender.com/',
-    git: 'https://github.com/Kanyorok/Robert-RubyBudget'
+      "This a school website that has been fully made using WordPress. It demonstrates expertise in customizing themes, integrating plugins for seamless functionality, and ensuring mobile responsiveness.",
+    tech: ['HTML', 'CSS', 'WordPress', 'Plugins'],
+    img: 'icons/jonathan.png',
+    live: 'https://jonathangloag.ac.ke/',
+    git: '#'
   },
   {
     id: 2,
@@ -54,13 +52,13 @@ const projectInfo = [
   },
   {
     id: 3,
-    projectName: 'BookStore',
+    projectName: 'Art Website',
     projectInfo:
       "The Bookstore is a website similar to the \"Awesome Books\". I have created a simplified version of it that allows a user to: Display a list of books, Add a book, and Remove a selected book.",
     tech: ['React', 'Redux', 'API', 'CSS'],
-    img: 'icons/books.png',
-    live: 'https://bookstore-2z7g.onrender.com/',
-    git: 'https://github.com/Kanyorok/bookstore'
+    img: 'icons/Artist_Website.png',
+    live: 'https://africanartistavni.co.ke/',
+    git: 'https://github.com/Kanyorok/Artist-website'
   },
   {
     id: 4,
@@ -78,7 +76,7 @@ const projectInfo = [
     projectInfo:
       "A replica of a commercial website that showcases skill in creating responsive website using the mobile-first approach",
     tech: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
-    img: 'icons/Data_content_image.svg',
+    img: 'icons/Tourism.png',
     live: 'https://kanyorok.github.io/CaptstoneProject/',
     git: 'https://github.com/Kanyorok/CaptstoneProject'
   },
@@ -88,7 +86,7 @@ const projectInfo = [
     projectInfo:
       "In this project, I have built a simple HTML list of To Do tasks. This simple web page is built using webpack and served by a webpack dev server.",
     tech: ['HTML', 'Bootstrap', 'Ruby', 'CSS'],
-    img: 'icons/website.svg',
+    img: 'icons/Todo.png',
     live: 'https://kanyorok.github.io/To-DoList/dist/',
     git: 'https://github.com/Kanyorok/To-DoList'
   },
@@ -100,7 +98,7 @@ function mainProject() {
   <img src=${presentProject.img} class="image_placement" alt="The Banner" />
   <div class="text_placement">
     <h2>${presentProject.projectTitle}</h2>
-    <p>${presentProject.projectDescription}</p>
+    <p class="info_starter">${presentProject.projectDescription}</p>
     <ul>
       <li>
         <a href="#">${presentProject.tech[0]}</a>
@@ -186,8 +184,8 @@ function showPopup() {
       <div class ="all_info">
         <p id="projectDesc"></p>
         <div class="bottom_section">
-          <a href="" id="extlink"><button id="projectSeven" type="button">See project <img src="icons/live_icon.svg" alt="" class="btnIcon"></button></a>
-          <a href="" id="gitlink"><button id="projectSeven" type="button">See project <img src="icons/github_2.svg" class="btnIcon"> </button></a>
+          <a href="" id="extlink"><button id="projectSeven" type="button">Visit Site <img src="icons/live_icon.svg" alt="" class="btnIcon"></button></a>
+          <a href="" id="gitlink"><button id="projectSeven" type="button">View Repo <img src="icons/github_2.svg" class="btnIcon"> </button></a>
         </div>
       </div>
     </div>
